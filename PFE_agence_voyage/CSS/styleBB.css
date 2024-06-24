@@ -1,0 +1,679 @@
+body {
+/*background: #ffe259;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-color:rgba(214, 209, 209, 0.507);
+} 
+/*footer client */
+.imgfooter {
+    position: relative; 
+    width: 150px; 
+    height: 150px;
+}
+
+/*asterix des champs obligatoires*/
+.asterix {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 53px;
+    right: 126px;
+}
+/*Fin asterix*/
+/*titre indicatif en haut d'une page*/
+h1.title {
+    margin-top: 60px;
+    font-family: 'Bitter', serif;
+    padding-top: 10px;
+}
+/* Un div de type alert info qui indique qu'il y a aucun résultat trouvé de la requéte */
+div.aucunResultat {
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 10px 10px 15px rgb(11, 153, 153);
+}
+/*Tableau de gestion */
+a.btn-danger {
+    font-size: 15px;
+}
+tr.data td {
+    font-size: 20px;
+}
+
+/*navbar simple */
+div.navbarSimple {
+    background-color: gray;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+div.navbarSimple h3 {
+    display:inline-block;
+    margin-left: 10px;
+    color: white;
+}
+/*Fin navbar simple */
+
+/*navbarVisiteur*/
+img.logo {
+    border:solid 1px yellow;
+}
+a.nav-link {
+    font-size: 20px;
+    margin: 0 19px;
+    color: white !important;
+    font-weight: 600;
+}
+a#bonjour {
+    font-size: 20px;
+    color: white !important;
+    font-weight: 600; 
+    margin: 0 -10px;
+}
+a.nav-link:hover span {
+    color: rgba(247, 137, 11, 0.699) !important;
+    transition-duration: 1.2s;
+}
+i.fa-solid {
+    margin-right: 10px;
+}
+a.nav-link:hover i.fa-solid{
+    color: yellow !important;
+    transition-duration: 1.2s;
+}
+nav.navbar{
+    position: sticky;
+    top:0;
+    background-color: rgb(14, 39, 122);
+}
+
+a.connex:hover {
+    color: rgba(0, 0, 0, 0.534) !important;
+    transition-duration: 1.2s;
+}
+a.dropdown-item:hover {
+    background-color: rgb(190, 184, 184);
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+@media all and (min-width:1002px) {
+    a.connex {
+        position: absolute;
+        right: 0px;
+        top: 10px;  
+    }
+    a.accVisiteur {
+        margin-left: 100px;
+    }  
+}
+/*Fin navbarVisiteur*/
+/*navbar Client*/
+@media all and (min-width:1200px) {
+    a#bonjour {
+        position: absolute;
+        right: -250px;
+        top: 0px;
+    }
+    .mouve[data-bs-popper] {
+        top: 100%;
+        left: 40px;
+        margin-top: 0.125rem;
+        width: 200px;
+    }
+    a.accClient {
+        margin-left: 100px;
+    }  
+}
+@media all and (max-width:1200px){
+    a#bonjour {
+        margin-left: 20px;
+    }
+}
+nav {
+    z-index: 4;
+}
+
+.hotel[data-bs-popper] {
+    top: 100%;
+    left: 30px;
+    margin-top: 0.125rem;
+}
+
+/* Fin navbar Client*/
+
+/*message connexion obligatoire*/
+div.conObligatoire {
+    width: 60%;
+    height: 250px;
+    margin: 100px auto;
+    position: relative;
+    box-shadow: 10px 10px 20px yellow;
+}
+i.fa-triangle-exclamation {
+    font-size: 70px;
+    position: absolute;
+    top:30px;
+    left: 140px;
+}
+div.conObligatoire h2 {
+    position: absolute;
+    top:50px;
+    left: 230px;
+}
+div.conObligatoire p {
+    position: absolute;
+    top:120px;
+    left: 140px;
+    font-size: 20px;
+}
+/* Fin message connexion obligatoire*/
+
+/*Mes réservations*/
+p.parHeader {
+   font-size: 20px;
+}
+/* Fin Mes réservations*/
+/*Poursuivre ma réservation */
+div.pourRes p {
+ font-size: 20px;
+}
+div.pourResCon {
+    margin-top: 20px;
+    box-shadow: 5px 10px 20px black;
+    padding:20px;
+    background-color: rgba(190, 190, 26, 0.486);
+}
+/*Fin Poursuivre ma réservation */
+
+/*Page connexion */
+body.connexion {
+    background-image: url('../IMAGES/connexionBackground');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.conForm {
+    width: 40%;
+    background-color: rgba(233, 161, 27, 0.493); 
+    padding: 10px;
+    margin: 80px auto;  
+    border-radius: 20px;
+}
+div.conForm > p {
+    font-size: 23px;
+}
+.conForm input.form-control {
+    width: 83%;
+    font-size: 23px;
+    margin: 0 auto;
+    height: 50px;
+    padding-left: 40px;
+}
+hr {
+    width: 70%;
+    margin: 20px auto;
+}
+i.insideInputLogin1, i.insideInputPass1{
+    position:absolute;
+    left:52px;
+    top: 16px;
+    font-size: 20px;
+}
+i.show-pass1 {
+    position:absolute;
+    right: 10px;
+    top: 16px;
+    font-size: 20px;
+}
+div.conForm div.form-text p {
+    font-size: 18px;
+    margin-left: 42px;
+    color: rgb(136, 5, 5);
+}
+/* FinPage connexion */
+/* Page inscription */
+body.inscription {
+  background-image: url('../IMAGES/inscriptionBackground.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+select.form-select {
+    width: 70%;
+   margin: 0 auto;
+}
+div.inscripForm, div.volForm{
+    width: 60%;
+    background-color: rgba(238, 181, 75, 0.493); 
+    padding: 0px;
+    margin: 40px auto;  
+    border-radius: 20px;
+    position: relative;   
+}
+div.inscripForm label, div.volForm label, div.reserverForm label {
+    font-size: 23px;
+    margin-left: 120px;
+    font-weight: 600;
+}
+i.insideInputLogin2, i.insideInputPass2,i.insideInputEmail, i.insideInputTel {
+    position:absolute;
+    left: 130px;
+    top: 57px;
+    font-size: 20px;
+}
+i.show-pass2, i.show-pass3{
+    position:absolute;
+    right: 80px;
+    top: 58px;
+    font-size: 20px;
+}
+@media all and (max-width:1200px) {
+    div.inscripForm label {
+        margin-left: 103px;
+    }
+    i.show-pass2,i.show-pass3 {
+        position:absolute;
+        right: 60px;
+        top: 58px;
+        font-size: 20px;
+    }
+    i.insideInputLogin2, i.insideInputPass2,i.insideInputEmail, i.insideInputTel{
+        position:absolute;
+        left:110px;
+        top: 57px;
+        font-size: 20px;
+    }
+}
+input.pad {
+    padding-left: 5px !important;
+}
+div.inscripForm input.form-control, div.volForm input.form-control, div.reserverForm .form-control{
+    width: 70%;
+    height: 45px !important;
+    font-size: 23px;
+    margin: 0 auto;
+    height: 50px;
+    padding-left: 40px;
+}
+div.error {
+    width: 50%;
+}
+div.error p {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+div.error i {
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+}
+/*Fin Page inscription */
+/*page réserver vol*/
+ body.vol {
+     background-image: url('../IMAGES/airplane.jpg');
+     background-attachment: scroll;
+     background-size:cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+ div.AirLogo {
+     height: 60px;
+     background-color: white;
+ }
+ @media all and (max-width:1200px) {
+    div.volForm label, div.reserverForm label {
+        margin-left: 103px;
+    }
+    i.insideInputEmail, i.insideInputTel{
+        position:absolute;
+        left:110px;
+        top: 57px;
+        font-size: 20px;
+    }
+}
+/*Fin page réserver vol*/
+/*page liste des hotels*/
+div.listeVille {
+    background-color: rgb(160, 210, 241);
+    height: 150vh;
+    position: relative;
+}
+div.card {
+  box-shadow: 10px 10px 15px gray;
+}
+div.listeVille label {
+ font-size: 18px;
+ font-weight: 600;
+}
+div.listeVille button {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
+h1.hotelNat {
+    font-family:'Bitter', serif ;
+}
+i.fa-star {
+    color: orangered;
+    font-size: 20px;
+}
+p.card-text {
+    font-size: 20px;
+}
+i.fa-angle-left, i.fa-angle-right {
+    color: rgb(34, 184, 184);
+    font-weight: bold;
+    font-size: 20px;
+}
+h3.card-header {
+    color: rgb(207, 8, 8);
+}
+
+@media all and (max-width:1240px) {
+    .card-title , .card-text {
+        margin-left: 50px;
+    }
+}
+/*Fin page liste des hotels*/
+/*Page accueil */
+ div.firstcarousel {
+     width: 100%;
+     margin: 10px auto;
+ }
+ div.firstcarousel div.carousel-item {
+     position: relative;
+ }
+ div.carousel-item h5.topDest {
+     position: absolute;
+     top: -200px;
+     right: 45%;
+     font-size: 50px;
+     color: white
+ }
+ div.carousel-item p {
+    position: absolute;
+     top: -80px;
+     right: 55%;
+     font-size: 30px;
+     color: white; 
+ }
+ div.carousel-caption {
+     width: 100%;
+ }
+ div.carousel-caption .btn {
+     width: 200px;
+     font-size: 25px;
+     color: rgba(0, 0, 0, 0.767);
+ }
+ i.yellow {
+     color: yellow;
+ }
+ i.blue {
+    color: cyan;
+}
+i.gray {
+    color: gray;
+}
+div.cardVille {
+    border-bottom: solid 3px orangered;
+}
+div.topHotel {
+    height: 450px;
+    width: 290px;
+    background-color: white;
+    border-bottom: solid 3px orangered;
+    box-shadow: 10px 10px 15px gray;
+    position: relative;
+}
+div.topHotel img {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+}
+div.topHotel h3 {
+    margin-top: 250px;
+}
+div.etapeReservation {
+    background-color: #9ce2ed;
+    border-radius: 50%;
+    width: 80px;
+    height: 107px;
+    font-size: 70px;
+    padding: 0px 18px;
+    box-shadow: 10px 10px 15px #54a5a9;
+    cursor: pointer;
+}
+div.detailsEtape .card { /*0fdfe2 */
+    background-color: #cfc5c5;
+    border-radius: 20px;
+}
+div.detailsEtape .card p , p.remarque{
+    font-size: 20px;
+    font-family: 'Bitter', serif;
+}
+/* Fin Page accueil */
+/* page destination populaires*/
+div.destPop {
+    border-radius: 25px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.637);
+    padding: 80px;
+    box-shadow: 10px 10px 15px gray;
+}
+div.destPop h1 {
+    font-family:'Bitter', serif ;
+}
+div.destPop p {
+    font-size: 22px;
+    text-align: justify;
+}
+/*Fin page destination populaires*/
+/*Page consulter hotel */
+p.adresse {
+    font-weight:bold; 
+    cursor:pointer;
+}
+p.adresse:hover {
+    color: lightseagreen;
+}
+div.description , div.descOmra , div.programme{
+    background-color: white;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 15px;
+    padding: 15px;
+}
+div.programme:hover {
+    border-top: solid 4px yellow;
+    transition-duration: 0.5s;
+}
+div.description h2 , div.descOmra h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+}
+div.description:hover, div.descOmra:hover {
+    border-top: solid 4px violet;
+    transition-duration: 0.5s;
+}
+div.description p , div.descOmra p{
+    font-size: 20px;
+}
+div.content h2 {
+    font-family: 'Bitter', serif;
+}
+span.tarif {
+    background-color: #54a5a9;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+div.divTarif p{
+    font-size: 25px;
+}
+div.divTarif li {
+    font-size: 20px;
+    text-align: left;
+}
+div.divTarif {
+    background-color: white;
+    box-shadow: 10px 10px 20px gray;
+    height: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+div.divTarif:hover {
+    border-top: solid 4px cyan;
+    transition-duration: 0.5s;
+}
+div.pointF {
+    background-color: white;
+    box-shadow: 10px 10px 20px gray;
+    padding: 10px;
+    border-radius: 15px;
+}
+div.pointF:hover {
+    border-top: solid 4px yellow; 
+    transition-duration: 0.5s;
+}
+p.POINT { /*les points forts*/
+    font-size: 15px;
+    font-weight: bold;
+}
+div.calTarif {
+    background-color: rgb(189, 241, 111);
+    padding: 20px;
+}
+div.calTarif .form-control {
+    display: inline-block;
+    width: 12% !important;
+    margin-right: 28px;
+    font-size: 20px;
+}
+div.calTarif .form-label, div.avis .form-label {
+   font-size: 25px;
+   margin-right: 8px;
+}
+div.calTarif .btn {
+    font-size: 20px;
+}
+div.avis {
+    background-color: rgb(209, 202, 202);
+    padding: 20px;
+}
+div.avis .form-select {
+    width: 20%;
+    margin: 0px auto;
+    display: inline-block;
+    font-size: 18px;
+}
+div.avis .form-control {
+    display: inline-block;
+    width: 9%;
+    font-size: 18px;
+}
+div.avis span {
+    font-size: 28px;
+}
+textarea.commentaire {
+    padding: 0.375rem 0.75rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+div.AVIS {
+    background-color: white;
+    border-top: solid 3px rgb(243, 178, 58);
+    width: 80%;
+    margin: 10px;
+    box-shadow: 10px 10px 15px gray;
+}
+div.AVIS div.col-3 p {
+    font-weight: bold;
+}
+div.AVIS div.margin {
+    margin-top: 12px;
+}
+div.AVIS:hover {
+    background-color: rgb(238, 235, 235);
+}
+/*Fin Page consulter hotel */
+/*Page réserver offre */
+body.hotelRemise {
+  background-image: url('../IMAGES/reserverHotel.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body.omra {
+    background-image: url('../IMAGES/formOmra.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+div.reserverForm {
+    width: 60%;
+    background-color: rgba(193, 212, 211, 0.733); 
+    padding: 0px;
+    margin: 40px auto;  
+    border-radius: 20px;
+    position: relative;   
+}
+/*Fin Page réserver offre */
+/*Page liste omra*/
+div.kaaba {
+    height: 250px; 
+}
+div.annonce1, div.annonce2,div.annonceR1, div.annonceR2 {
+    height:auto; 
+    margin-bottom: -200px;
+    max-width: 160px; 
+    background-attachment: scroll;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+div.annonce1, div.annonce2 {
+    background-image: url('../IMAGES/annonce1.jpg');
+}
+div.annonceR1, div.annonceR2 {
+    background-image: url('../IMAGES/annonceR.jpg');
+}
+@media all and (max-width:1200px) {
+    div.annonce1, div.annonce2, div.annonceR1, div.annonceR2 {
+        display: none;
+    }
+}
+@media all and (max-width:1300px) {
+    div.annonce1, div.annonceR1 {
+        margin-right: -50px;
+    }
+    div.annonce2, div.annonceR2 {
+        margin-left: -50px;
+    }
+}
+
+/*Fin page liste omra*/
+/*Page consulter omra*/
+div.accordion button {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+div.accordion {
+    box-shadow: 10px 10px 15px gray;
+}
+/*FinPage consulter omra*/

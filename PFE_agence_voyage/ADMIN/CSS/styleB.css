@@ -1,0 +1,215 @@
+body {
+    /*background: #ffe259;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+   /* background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color:rgba(214, 209, 209, 0.507);
+    position: relative;
+}
+/*asterix des champs obligatoires*/
+.asterix {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top:57px;
+    right: 125px;
+}
+/*Fin asterix*/
+i.fa-solid {
+    margin-right: 10px;
+}
+/*titre indicatif en haut d'une page*/
+h1.title {
+    margin-top: 60px;
+    font-family: 'Bitter', serif;
+    padding-top: 10px;
+}
+/*Fin titre */
+/*Barre de recherche*/
+i.fa-magnifying-glass {
+    color: white;
+    font-size: 18px;
+}
+.search input {
+    width:65%;
+     height:55px; 
+     display:inline-block; 
+     border-radius:15px;
+}
+.search button {
+    border-radius:15px;
+}
+/* Fin Barre de recherche*/
+
+i.fa-solid {
+    margin-right: 10px;
+}
+/* Un div de type alert info qui indique qu'il y a aucun résultat trouvé de la requéte */
+div.aucunResultat {
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 10px 10px 15px rgb(11, 153, 153);
+}
+/*Barre de recherche*/
+.search {
+  font-size: 25px;
+}
+/*fin Barre de recherche*/
+/*Tableau de gestion */
+a.btn-danger {
+    font-size: 17px;
+}
+
+tr.data td {
+    font-size: 17px;
+}
+/*message connexion obligatoire*/
+div.conObligatoire {
+    width: 60%;
+    height: 250px;
+    margin: 100px auto;
+    position: relative;
+    box-shadow: 10px 10px 20px yellow;
+}
+i.fa-triangle-exclamation {
+    font-size: 70px;
+    position: absolute;
+    top:30px;
+    left: 140px;
+}
+div.conObligatoire h2 {
+    position: absolute;
+    top:50px;
+    left: 230px;
+}
+div.conObligatoire p {
+    position: absolute;
+    top:120px;
+    left: 140px;
+    font-size: 20px;
+}
+/* Fin message connexion obligatoire*/
+ 
+/*navbar admin*/
+img.logo {
+    border:solid 1px yellow;
+}
+a.navAdmin:hover span, a.navHome:hover span {
+    color: #f1b668c9!important;
+    font-weight: bold;
+    transition-duration: 1.0s;
+}
+a.navAdmin:hover i , a.navHome:hover i{
+   color: yellow;
+   transition-duration: 1.0s;
+}
+nav.sticky{
+    position: sticky;
+    top:0;
+    background-color: rgb(14, 39, 122);
+    z-index: 4;
+}
+a.navHome {
+    position: absolute;
+    left: 80px;
+    top: 10px; 
+}
+a.navAdmin {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+a.navAdmin span, a.navAdmin i, a.navHome span, a.navHome i {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+}
+    
+i.fa-user {
+    margin-right: 10px;
+}
+/*page Ajouter réservation vol*/
+@media all and (max-width:1200px) {
+    div.volForm div.mb-2 label {
+        margin-left: 103px;
+    }
+    div.volForm i.insideInputEmail{
+        position:absolute;
+        left:110px;
+        top: 57px;
+        font-size: 20px;
+    }
+}
+div.volForm{
+    width: 60%;
+    background-color: rgba(56, 190, 243, 0.425); 
+    padding: 0px;
+    margin: 40px auto;  
+    border-radius: 20px;
+    position: relative;
+    
+}
+div.volForm label {
+    font-size: 23px;
+    margin-left: 120px;
+    font-weight: 600;
+}
+div.volForm hr {
+    width: 80%;
+    margin: 5px auto;
+}
+i.insideInputEmail {
+    position:absolute;
+    left:132px;
+    top: 57px;
+    font-size: 20px;
+}
+div.volForm input.form-control{
+    width: 70%;
+    height: 45px !important;
+    font-size: 23px;
+    margin: 0 auto;
+    height: 50px;
+    padding-left: 40px;
+}
+input.pad {
+    padding-left: 5px !important;
+}
+select.form-select {
+    width: 70% ;
+   margin: 0 auto;
+}
+div.volForm fieldset legend {
+    background-color: yellow;
+    border-radius: 50%;
+}
+div.error {
+    width: 50%;
+}
+div.error p {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+div.error i {
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+}
+/* Fin page Ajouter réservation vol*/
+/*Ajouter hotel*/
+div.form-floating textarea {
+    width: 70%;
+    margin: 10px auto;
+}
+div.tarif input {
+    width:40% !important;
+    margin-left: 15% !important;
+}
+div.tarif .asterix {
+    position: absolute;
+    top: 53px;
+    right: 375px;
+}
+/* Fin Ajouter hotel*/
